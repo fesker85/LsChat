@@ -10,6 +10,9 @@ import android.view.View;
 
 import cc.lzsou.lschat.R;
 
+/**
+ * 忘记密码
+ */
 public class ForgetActivity extends AppCompatActivity {
 
     @Override
