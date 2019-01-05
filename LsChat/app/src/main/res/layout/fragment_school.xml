@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/title_activity_school"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/default_textsize" />
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"></android.support.v4.view.ViewPager>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="监护"
+                    android:textSize="16sp"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:background="@color/colorLightWhite"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/colorText"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_body"
+                        android:clickable="true"
+                        android:background="@drawable/btn_style_transparent"
+                        android:layout_weight="1"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:drawableTop="@drawable/ic_recent_actors_green_32dp"
+                        android:gravity="center"
+                        android:text="学生信息" />
+                    <TextView
+                        style="@style/text_body"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/btn_style_transparent"
+                        android:drawableTop="@drawable/ic_access_time_green_32dp"
+                        android:gravity="center"
+                        android:text="学生请假" />
+                    <TextView
+                        style="@style/text_body"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/btn_style_transparent"
+                        android:drawableTop="@drawable/ic_content_paste_green_32dp"
+                        android:gravity="center"
+                        android:text="家庭作业" />
+                    <TextView
+                        style="@style/text_body"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/btn_style_transparent"
+                        android:drawableTop="@drawable/ic_people_outline_green_32dp"
+                        android:gravity="center"
+                        android:text="监护管理" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="工作"
+                    android:textSize="16sp"
+                    android:paddingLeft="@dimen/default_padding"
+                    android:background="@color/colorLightWhite"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:textColor="@color/colorText"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        style="@style/text_body"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/btn_style_transparent"
+                        android:drawableTop="@drawable/ic_history_blue_32dp"
+                        android:gravity="center"
+                        android:text="待办工作" />
+                    <TextView
+                        style="@style/text_body"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/btn_style_transparent"
+                        android:drawableTop="@drawable/ic_wrap_text_blue_32dp"
+                        android:gravity="center"
+                        android:text="到校情况" />
+                    <TextView
+                        style="@style/text_body"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/btn_style_transparent"
+                        android:drawableTop="@drawable/ic_touch_app_blue_32dp"
+                        android:gravity="center"
+                        android:text="布置作业" />
+                    <TextView
+                        style="@style/text_body"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:drawablePadding="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:background="@drawable/btn_style_transparent"
+                        android:drawableTop="@drawable/ic_update_blue_32dp"
+                        android:gravity="center"
+                        android:text="老师请假" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

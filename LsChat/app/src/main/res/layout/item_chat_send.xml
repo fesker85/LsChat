@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:touchscreenBlocksFocus="false">
+
+    <TextView
+        android:id="@+id/timeView"
+        style="@style/text_body"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="2018-11-09" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:touchscreenBlocksFocus="false"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:id="@+id/progressView"
+            style="@android:style/Widget.ProgressBar.Small.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp" />
+        <ImageView
+            android:id="@+id/failView"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:src="@drawable/msg_state_fail_resend"
+            />
+        <TextView
+            android:id="@+id/voiceTime"
+            style="@style/text_body"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/voiceView"
+            android:text="19′"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible" />
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:padding="1dp">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:background="@drawable/img_bg_transparent"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/videoLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:visibility="gone"
+            android:padding="1dp">
+            <ImageView
+                android:id="@+id/videoImage"
+                android:scaleType="centerCrop"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:clickable="true"
+                android:src="@drawable/ic_play_circle_outline_white_32dp"
+                android:background="@drawable/img_bg_transparent"
+                tools:ignore="VectorDrawableCompat" />
+            <TextView
+                android:id="@+id/videoTime"
+                android:layout_width="match_parent"
+                android:background="#b5555555"
+                android:text="11'0"
+                android:padding="3dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"
+                android:gravity="right"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/gifLayout"
+            android:layout_width="wrap_content"
+            android:padding="1dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gifView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/text_subhead_black"
+                android:layout_marginRight="8dp"
+                android:layout_toLeftOf="@id/imageView"
+                android:src="@mipmap/g001"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/voiceView"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:background="@drawable/chat_item_to_blue"
+            android:layout_toLeftOf="@id/textView"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:scaleType="fitEnd"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp"
+            android:src="@mipmap/icon_voice_right3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/avatarView"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="爱神的箭拉"
+            android:textColor="#fff"
+            android:paddingLeft="8dp"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:background="@drawable/chat_item_to_blue"
+            android:id="@+id/textView"/>
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="180dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:clickable="true"
+            android:visibility="gone"
+            android:background="@drawable/chat_item_to_white"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:textSize="15sp"
+                android:padding="2dp"
+                android:maxLines="2"
+                android:text="绿地渤海大厦(陕西省西安市)"
+                android:textColor="@color/colorBlack"/>
+            <ImageView
+                android:id="@+id/locationImage"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/default_map"
+                android:layout_marginRight="8dp"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/avatarView"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="3dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_avatar"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

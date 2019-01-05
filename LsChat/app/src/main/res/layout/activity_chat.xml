@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.activity.ChatActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#f2f2f2"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_arrow_back_white_24dp" />
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_toRightOf="@id/backButton"
+                android:text="聊天"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/default_textsize" />
+            <ImageButton
+                android:id="@+id/personButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_person_white_24dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+            <FrameLayout
+                android:id="@+id/frameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLightGray"></View>
+            <FrameLayout
+                android:id="@+id/frameOther"
+                android:visibility="gone"
+                android:paddingTop="8dp"
+                android:background="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"></FrameLayout>
+        </LinearLayout>
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottomLayout"
+            android:layout_below="@id/topLayout"
+            android:divider="#00000000"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:overScrollFooter="@android:color/transparent"
+            android:overScrollHeader="@android:color/transparent"
+            android:overScrollMode="never"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:scrollbars="none"
+            android:transcriptMode="normal"></com.jude.easyrecyclerview.EasyRecyclerView>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

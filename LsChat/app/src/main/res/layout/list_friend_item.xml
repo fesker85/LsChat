@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_bg"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_user_head"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_letter"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/default_avatar"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_letter"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_user_head"
+        android:padding="5dp"
+        android:text="测试测试"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_textsize"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_letter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_item_bg"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:text="A"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+</RelativeLayout>

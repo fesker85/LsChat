@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:layout_height="64dp" >
+
+    <RelativeLayout
+        android:layout_width="58dp"
+        android:id="@+id/item_imagelayout"
+        android:layout_height="52dp">
+        <ImageView
+            android:id="@+id/headImg"
+            android:scaleType="fitXY"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+        <TextView
+            android:id="@+id/countView"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/sharp_dot"
+            android:gravity="center"
+            android:text="asdad"
+            android:layout_marginRight="2dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="8dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:paddingLeft="4dp"
+        android:layout_toRightOf="@id/item_imagelayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/dateView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="8dp"
+                android:textColor="#666666"
+                android:text="asdad"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/nickView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:text="admin"
+                android:maxLength="15"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:id="@+id/msgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:textColor="#666666"
+                android:singleLine="true"
+                android:text="asdad"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

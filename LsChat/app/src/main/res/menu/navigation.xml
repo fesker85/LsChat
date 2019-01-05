@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_message_black_24dp"
+        android:title="@string/title_message"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/navigation_explore"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="@string/title_explore"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/navigation_school"
+        android:icon="@drawable/ic_account_balance_black_24dp"
+        android:title="学校"
+        app:showAsAction="always|withText" />
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/ic_account_box_black_24dp"
+        android:title="@string/title_contact"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/navigation_person"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_person"
+        app:showAsAction="always|withText" />
+
+</menu>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">智慧校园</string>
+    <string name="title_activity_main">智慧校园</string>
+    <string name="title_message">消息</string>
+    <string name="title_contact">通讯录</string>
+    <string name="title_explore">发现</string>
+    <string name="title_person">我的</string>
+
+    <string name="lschar_service">LsChat</string>
+    <string name="title_activity_login">智慧校园</string>
+    <string name="title_activity_register">注册</string>
+    <string name="title_activity_forget">找回密码</string>
+    <string name="title_activity_mobile_login">短信登录</string>
+    <string name="title_activity_register_success">智慧校园</string>
+    <string name="title_activity_new_friend">新的朋友</string>
+    <string name="title_activity_friend_remark">朋友备注</string>
+    <string name="title_activity_group">群聊</string>
+    <string name="title_activity_school">学校</string>
+    <string name="title_activity_friend">详细资料</string>
+    <string name="title_activity_search">搜索</string>
+    <string name="title_activity_friend_add">添加朋友</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_friend_apply">朋友申请</string>
+    <string name="title_activity_chat">聊天</string>
+    <string name="title_activity_chat_image">聊天图片</string>
+    <string name="title_activity_friend_attest">朋友验证</string>
+    <string name="title_activity_group_add">发起群聊</string>
+    <string name="title_activity_scan">扫一扫</string>
+    <string name="title_activity_nick">设置名字</string>
+    <string name="title_activity_profile">个人信息</string>
+    <string name="title_activity_qrcode">二维码</string>
+    <string name="title_activity_image_selector">选择图片</string>
+    <string name="net_error">网络连接错误，请检查</string>
+    <string name="title_activity_region">选择地区</string>
+    <string name="title_activity_wallet">钱包</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_password">设置密码</string>
+    <string name="title_activity_safe">帐号与安全</string>
+    <string name="title_activity_notisetting">新消息通知</string>
+    <string name="title_activity_disturb">勿扰模式</string>
+    <string name="title_activity_privacy">隐私</string>
+    <string name="title_activity_clear">一键清理</string>
+</resources>

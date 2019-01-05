@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+        }
+        debug {
+            keyAlias 'LSChat'
+            keyPassword 'fesker1985'
+            storeFile file('D:/Android/Keystore/LsChat/lschat.jks')
+            storePassword 'fesker1985'
+        }
+    }
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "cc.lzsou.lschat"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled = true
+        //这里只使用了 armeabi 架构的 定位sdk
+        ndk {
+            abiFilters 'armeabi-v7a', 'armeabi-v8a'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs 'libs/jni'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-vector-drawable:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'org.jsoup:jsoup:1.11.3'
+    implementation 'org.igniterealtime.smack:smack-android-extensions:4.3.0'
+    implementation 'org.igniterealtime.smack:smack-experimental:4.3.0'
+    implementation 'org.igniterealtime.smack:smack-tcp:4.3.0'
+    implementation files('libs/gson-1.6.jar')
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation 'com.jude:easyrecyclerview:4.4.2'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //异步网络
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    //gif 图片
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+    //二维码
+    implementation 'com.google.zxing:core:3.3.0'
+    //控件绑定
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife-annotations:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:multidex:1.0.1'
+
+    //腾讯地图
+    implementation files('libs/jni/tencent_map_sdk.jar')
+    //腾讯定位
+    implementation files('libs/jni/TencentLocationSdk.jar')
+    //听训地图搜索
+    implementation files('libs/TencentMapSearch.jar')
+    //图片视频选择器
+    implementation project(':media')
+    //浏览器
+    implementation project(':webbrowser')
+    //键盘
+    implementation project(':fingerboard')
+    //服务器信息
+    implementation project(':servercore')
+}
+configurations {
+    all*.exclude group: 'xpp3', module: 'xpp3'
+}

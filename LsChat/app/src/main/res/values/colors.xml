@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    -->
+    <!--<color name="colorPrimary">#4CAF50</color>-->
+    <!--<color name="colorPrimaryDark">#2E7D32</color>-->
+    <!--<color name="colorAccent">#4CAF50</color>-->
+    <color name="colorPrimary">#009EFC</color>
+    <color name="colorPrimaryDark">#009EFC</color>
+    <color name="colorAccent">#00B8FB</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightWhite">#f5f5f5</color>
+    <color name="colorBlue">#2932E1</color>
+    <color name="colorText">#666</color>
+    <color name="colorBlack">#ff000000</color>
+    <color name="colorLightGray">#eee</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorLine">#d9d9d9</color>
+    <color name="colorGray">#aaa</color>
+    <color name="colorGreen">#45C01A</color>
+    <color name="colorRed">#F00</color>
+
+
+    <!-- 黑 -->
+    <color name="black">#000000</color>
+    <!-- 全透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 半黑透明 -->
+    <color name="transparent_half_black">#C8000000</color>
+    <!-- 半透明 -->
+    <color name="transparent_half">#55000000</color>
+    <!-- 浅黑透明 -->
+    <color name="transparent_half2">#A8000000</color>
+    <!-- 黑灰 -->
+    <color name="gray_black">#A6A6A6</color>
+    <!-- 白灰 -->
+    <color name="gray_white">#F5F5F5</color>
+    <color name="gray_white_p"> #D9D9D9</color>
+    <!-- 浅灰 -->
+    <color name="gray_item_bg">#EBEBEB</color>
+    <!-- 深灰 -->
+    <color name="gray_item_bg_p">#D9D9D9</color>
+    <!-- 绿色 -->
+    <color name="green">#45C01A</color>
+    <!-- actionBar的背景色 -->
+    <color name="actionbar_back">#22292C</color>
+    <color name="blue">#5D7199</color>
+    <color name="black_actionbar">#303030</color>
+
+</resources>

@@ -1,0 +1,33 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        //MD5:  FB:08:36:02:0B:C9:A3:DB:50:72:80:48:40:39:5F:65
+        //SHA1: 7F:06:E5:86:87:2B:7F:DA:BF:5F:D5:B1:09:1C:F9:7F:DC:26:18:E4
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://oss.sonatype.org/content/repositories/snapshots'
+        }
+        maven { url "https://jitpack.io" }
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

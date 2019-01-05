@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="64dp" >
+    <RelativeLayout
+        android:layout_width="58dp"
+        android:id="@+id/item_leftlayout"
+        android:layout_height="52dp">
+        <cc.lzsou.lschat.views.image.CircleImage
+            android:id="@+id/newfriend_avatar"
+            android:scaleType="fitXY"
+            android:layout_width="52dp"
+            android:layout_height="52dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/item_rightlayout"
+        android:layout_width="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="52dp">
+        <Button
+            android:id="@+id/newfirend_btn"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:background="@drawable/btn_style_green"
+            android:text="接受"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:focusable="false"
+            android:visibility="visible"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/newfriend_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="已添加"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="15sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:paddingLeft="4dp"
+        android:layout_toRightOf="@id/item_leftlayout"
+        android:layout_toLeftOf="@id/item_rightlayout"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/newfirend_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:text="admin"
+            android:maxLength="15"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/newfriend_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="5dp"
+            android:textColor="#666666"
+            android:singleLine="true"
+            android:text="asdad"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>
